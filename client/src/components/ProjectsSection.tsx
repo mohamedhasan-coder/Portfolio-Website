@@ -19,15 +19,15 @@ const projects: Project[] = [
     description: 'A fully responsive front-end music website built with HTML and CSS, optimized for all devices with clean, intuitive design.',
     image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
     technologies: ['HTML', 'CSS', 'Responsive'],
-    githubUrl: 'https://github.com/mohamedhasan8403',
+    githubUrl: 'https://github.com/mohamedhasan-coder/Responsive-Music-Website.git',
     status: 'completed'
   },
   {
-    title: 'Responsive Pizza Shop',
-    description: 'Modern pizza shop website with interactive menu, order customization, and seamless user experience across all devices.',
+    title: 'Walmart Clone',
+    description: 'Modern e-commerce website clone of Walmart with interactive shopping features, product browsing, and seamless user experience across all devices.',
     image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/mohamedhasan8403',
+    githubUrl: 'https://github.com/mohamedhasan-coder/Walmart-Clone.git',
     status: 'completed'
   },
   {

@@ -116,7 +116,7 @@ export const ContactSection = () => {
               <div className="flex space-x-4">
                 <Card className="flex-1 p-4 hover:bg-accent transition-colors cursor-pointer" data-testid="github-card">
                   <a 
-                    href="https://github.com/mohamedhasan8403" 
+                    href="https://github.com/mohamedhasan-coder" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex flex-col items-center text-center"

@@ -87,7 +87,7 @@ export const HeroSection = () => {
 
             <div className="flex space-x-6 text-2xl">
               <a 
-                href="https://github.com/mohamedhasan8403" 
+                href="https://github.com/mohamedhasan-coder" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
