@@ -73,7 +73,7 @@ export const AboutSection = () => {
 
           <div className="flex justify-center animate-on-scroll">
             <img 
-              src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" 
+              src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" 
               alt="Animated boy character coding" 
               className="w-full max-w-md rounded-2xl shadow-xl"
               data-testid="about-gif"
