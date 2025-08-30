@@ -2,79 +2,77 @@ import { Card, CardContent } from '@/components/ui/card';
 
 interface Skill {
   name: string;
-  category: string;
-  gifUrl: string;
+  icon: string;
 }
 
-const skills: Skill[] = [
-  {
-    name: 'Java',
-    category: 'Core Programming',
-    gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif'
-  },
-  {
-    name: 'React.js',
-    category: 'Frontend Framework',
-    gifUrl: 'https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif'
-  },
-  {
-    name: 'Python',
-    category: 'Data Science & AI',
-    gifUrl: 'https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif'
-  },
-  {
-    name: 'JavaScript',
-    category: 'Dynamic Programming',
-    gifUrl: 'https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif'
-  },
-  {
-    name: 'HTML/CSS',
-    category: 'Web Fundamentals',
-    gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif'
-  },
-  {
-    name: 'Git & GitHub',
-    category: 'Version Control',
-    gifUrl: 'https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif'
-  },
-  {
-    name: 'Spring Boot',
-    category: 'Backend Framework',
-    gifUrl: 'https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif'
-  },
-  {
-    name: 'AI & ML',
-    category: 'Machine Learning',
-    gifUrl: 'https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif'
-  }
+const techStack: Skill[] = [
+  { name: 'React.js', icon: '⚛️' },
+  { name: 'JavaScript', icon: '🟨' },
+  { name: 'HTML', icon: '🟧' },
+  { name: 'Java', icon: '☕' },
+  { name: 'Spring Boot', icon: '🍃' },
+  { name: 'Tailwind CSS', icon: '🎨' },
+  { name: 'MongoDB', icon: '🍃' },
+  { name: 'Python', icon: '🐍' },
+  { name: 'C++', icon: '⚡' }
+];
+
+const tools: Skill[] = [
+  { name: 'VS Code', icon: '💻' },
+  { name: 'GitHub', icon: '🐙' },
+  { name: 'Figma', icon: '🎨' },
+  { name: 'AWS', icon: '☁️' },
+  { name: 'Docker', icon: '🐳' }
 ];
 
 export const SkillsSection = () => {
   return (
     <section id="skills" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Technical Skills</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life
-          </p>
-        </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
+            
+            {/* TechStack Section */}
+            <div className="animate-on-scroll">
+              <h2 className="text-3xl font-bold text-primary mb-8">TechStack</h2>
+              <div className="grid grid-cols-3 gap-4">
+                {techStack.map((tech) => (
+                  <Card key={tech.name} className="skill-card card-hover" data-testid={`skill-${tech.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}>
+                    <CardContent className="p-6 text-center">
+                      <div className="text-4xl mb-3">{tech.icon}</div>
+                      <h3 className="text-sm font-medium text-foreground">{tech.name}</h3>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {skills.map((skill, index) => (
-            <Card key={skill.name} className="skill-card card-hover animate-on-scroll" data-testid={`skill-${skill.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}>
-              <CardContent className="p-6 text-center">
-                <img 
-                  src={skill.gifUrl} 
-                  alt={`${skill.name} animation`} 
-                  className="w-16 h-16 mx-auto mb-4 rounded-lg object-cover"
-                  loading="lazy"
-                />
-                <h3 className="font-semibold text-foreground mb-2">{skill.name}</h3>
-                <p className="text-sm text-muted-foreground">{skill.category}</p>
-              </CardContent>
-            </Card>
-          ))}
+            {/* About & Tools Section */}
+            <div className="animate-on-scroll">
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold text-primary mb-6">About</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  I am a Full Stack Developer skilled in Java, Spring Boot, React.js, and modern web technologies, 
+                  with a strong passion for AI & Data Science.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-6">Tools</h3>
+                <div className="grid grid-cols-5 gap-4">
+                  {tools.map((tool) => (
+                    <Card key={tool.name} className="skill-card card-hover" data-testid={`tool-${tool.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}>
+                      <CardContent className="p-4 text-center">
+                        <div className="text-3xl mb-2">{tool.icon}</div>
+                        <h4 className="text-xs font-medium text-foreground">{tool.name}</h4>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
