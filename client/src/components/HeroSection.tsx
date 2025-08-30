@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Eye, Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import homeImage from '@assets/home.gif'
+import homeImage from '@assets/home.gif';
 
 export const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
@@ -118,11 +118,11 @@ export const HeroSection = () => {
 
           <div className="flex justify-center animate-on-scroll">
             <div className="relative">
-              <img 
-                src="{homeImage}"
-                alt="Developer working animation" 
-                className="w-full max-w-lg rounded-2xl shadow-2xl animate-bounce-subtle"
-                data-testid="hero-gif"
+              <img
+              src={homeImage}
+              alt="Developer working animation"
+              className="w-full max-w-lg rounded-2xl shadow-2xl animate-bounce-subtle"
+              data-testid="hero-gif"
               />
               <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-4 rounded-full shadow-lg">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
