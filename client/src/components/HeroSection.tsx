@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Eye, Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import homeImage from '@assets/home.gif'
 
 export const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
@@ -11,7 +12,8 @@ export const HeroSection = () => {
     "Java Full Stack Developer",
     "UI/UX Designer", 
     "CS Enthusiast",
-    "Problem Solver"
+    "Problem Solver",
+    "AI | ML | DSA Enthusiast"
   ];
 
   useEffect(() => {
@@ -117,7 +119,7 @@ export const HeroSection = () => {
           <div className="flex justify-center animate-on-scroll">
             <div className="relative">
               <img 
-                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3g2eGZ6MXVqZmlocjBla2dpa2RuYTRvaWNvdnB0NXFiaGRqYnFqZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif" 
+                src="{homeImage}"
                 alt="Developer working animation" 
                 className="w-full max-w-lg rounded-2xl shadow-2xl animate-bounce-subtle"
                 data-testid="hero-gif"
