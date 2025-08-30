@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+import javaLogo from '@assets/image_1756543516610.png';
 
 interface Skill {
   name: string;
@@ -9,7 +10,7 @@ const techStack: Skill[] = [
   { name: 'React.js', gifUrl: 'https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif' },
   { name: 'JavaScript', gifUrl: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXl5OGY2Yjl4eDlvd2dkNmZkMnR6NWp5eXphdndvdmJoYmxteHR0eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SvFocn0wNMx0iv2rYz/giphy.gif' },
   { name: 'HTML', gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif' },
-  { name: 'Java', gifUrl: '/attached_assets/image_1756543516610.png' },
+  { name: 'Java', gifUrl: javaLogo },
   { name: 'Spring Boot', gifUrl: 'https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif' },
   { name: 'Tailwind CSS', gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif' },
   { name: 'MongoDB', gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif' },
