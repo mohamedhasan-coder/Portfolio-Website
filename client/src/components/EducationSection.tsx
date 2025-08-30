@@ -39,12 +39,22 @@ const certificates: Certificate[] = [
   {
     title: 'Frontend For Java Full Stack Development',
     issuer: 'Board Infinity',
-    url: '#'
+    url: 'https://www.coursera.org/account/accomplishments/verify/FAIFKP1463CU'
   },
   {
     title: 'What is Data Science',
     issuer: 'IBM',
-    url: '#'
+    url: 'https://www.coursera.org/account/accomplishments/verify/5NRJOF9G5WNI'
+  },
+  {
+    title: 'Tools For Data Science',
+    issuer: 'IBM',
+    url: 'https://www.coursera.org/account/accomplishments/verify/EMNCUGHW3MEO'
+  },
+  {
+    title: 'Data Science Methodology',
+    issuer: 'IBM',
+    url: 'https://www.coursera.org/account/accomplishments/verify/1V7W6T3SVQ1C'
   }
 ];
 
@@ -53,19 +63,24 @@ export const EducationSection = () => {
     <section id="education" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Education Journey</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            Education Journey
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             My academic background and continuous learning path
           </p>
         </div>
 
+        {/* Education Timeline */}
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-border"></div>
             
             {education.map((edu, index) => (
-              <div key={edu.degree} className={`relative flex items-center mb-12 animate-on-scroll ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+              <div 
+                key={edu.degree} 
+                className={`relative flex items-center mb-12 animate-on-scroll ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}
+              >
                 <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 ${edu.status === 'current' ? 'bg-primary' : 'bg-muted'} rounded-full border-4 border-background`}></div>
                 <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
                   <Card className="card-hover" data-testid={`education-${index}`}>
@@ -95,7 +110,9 @@ export const EducationSection = () => {
 
         {/* Certificates */}
         <div className="mt-20 animate-on-scroll">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-12">Certifications</h3>
+          <h3 className="text-3xl font-bold text-center text-foreground mb-12">
+            Certifications
+          </h3>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {certificates.map((cert, index) => (
               <Card key={cert.title} className="card-hover" data-testid={`certificate-${index}`}>
@@ -110,6 +127,8 @@ export const EducationSection = () => {
                       {cert.url && (
                         <a 
                           href={cert.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
                           className="text-primary hover:underline text-sm"
                           data-testid={`certificate-link-${index}`}
                         >

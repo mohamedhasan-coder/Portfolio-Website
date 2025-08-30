@@ -1,5 +1,14 @@
 import { Card, CardContent } from '@/components/ui/card';
 import javaLogo from '@assets/java.png';
+import spring from '@assets/spring-boot.png';
+import tailwind from '@assets/tailwind-css.png';
+import mango from '@assets/mongodb.png';
+import CPP from '@assets/cpp.png';
+import git from '@assets/git-hub.png';
+import figma from '@assets/figma.png';
+import AWS from '@assets/aws.png';
+import docker from '@assets/Docker.webp'
+import ubuntu from '@assets/ubuntu.png'
 
 interface Skill {
   name: string;
@@ -11,19 +20,19 @@ const techStack: Skill[] = [
   { name: 'JavaScript', gifUrl: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXl5OGY2Yjl4eDlvd2dkNmZkMnR6NWp5eXphdndvdmJoYmxteHR0eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SvFocn0wNMx0iv2rYz/giphy.gif' },
   { name: 'HTML', gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif' },
   { name: 'Java', gifUrl: javaLogo },
-  { name: 'Spring Boot', gifUrl: 'https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif' },
-  { name: 'Tailwind CSS', gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif' },
-  { name: 'MongoDB', gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif' },
+  { name: 'Spring Boot', gifUrl: spring },
+  { name: 'Tailwind CSS', gifUrl: tailwind },
+  { name: 'MongoDB', gifUrl: mango },
   { name: 'Python', gifUrl: 'https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif' },
-  { name: 'C++', gifUrl: 'https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif' }
+  { name: 'C++', gifUrl: CPP }
 ];
 
 const tools: Skill[] = [
   { name: 'VS Code', gifUrl: 'https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif' },
-  { name: 'GitHub', gifUrl: 'https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif' },
-  { name: 'Figma', gifUrl: 'https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif' },
-  { name: 'AWS', gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif' },
-  { name: 'Docker', gifUrl: 'https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif' }
+  { name: 'GitHub', gifUrl: git},
+  { name: 'Figma', gifUrl: figma },
+  { name: 'Docker', gifUrl: docker },
+  { name:'Ubuntu', gifUrl: ubuntu}
 ];
 
 export const SkillsSection = () => {

@@ -2,6 +2,7 @@ import { Github, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import walmart from '@assets/Walmart-clone.png'
 
 interface Project {
   title: string;
@@ -25,7 +26,7 @@ const projects: Project[] = [
   {
     title: 'Walmart Clone',
     description: 'Modern e-commerce website clone of Walmart with interactive shopping features, product browsing, and seamless user experience across all devices.',
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
+    image: walmart,
     technologies: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/mohamedhasan-coder/Walmart-Clone.git',
     status: 'completed'
