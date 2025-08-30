@@ -96,8 +96,10 @@ export const HeroSection = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/mohamed-hasan-m-325051362/" 
                 className="text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
                 data-testid="linkedin-link"
               >
                 <Linkedin className="h-6 w-6" />

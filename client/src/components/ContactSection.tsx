@@ -127,7 +127,9 @@ export const ContactSection = () => {
                 </Card>
                 <Card className="flex-1 p-4 hover:bg-accent transition-colors cursor-pointer" data-testid="linkedin-card">
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/mohamed-hasan-m-325051362/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex flex-col items-center text-center"
                   >
                     <Linkedin className="h-8 w-8 text-foreground mb-2" />
