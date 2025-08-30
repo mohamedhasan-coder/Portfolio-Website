@@ -55,7 +55,7 @@ export const HeroSection = () => {
           <div className="space-y-8 animate-on-scroll">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground">
-                Hello, I'm <span className="text-primary">Mohamed</span>
+                Hello, I'm <span className="text-primary">Mohamed Hasan</span>
               </h1>
               <div className="text-2xl lg:text-3xl font-semibold text-muted-foreground h-12">
                 <span className="border-r-2 border-primary animate-pulse">

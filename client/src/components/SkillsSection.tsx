@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import javaLogo from '@assets/image_1756543516610.png';
+import javaLogo from '@assets/java.png';
 
 interface Skill {
   name: string;

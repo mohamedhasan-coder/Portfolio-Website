@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Moon, Sun, Download, Menu, X } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Button } from '@/components/ui/button';
+import resumePdf from '@assets/Mohamed_Hasan_Resume.pdf?url';
 
 export const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
@@ -16,25 +17,16 @@ export const Navigation = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
+const handleDownloadResume = () => {
+  const link = document.createElement('a');
+  link.href = resumePdf; // This is the Vite-generated URL for your PDF
+  link.download = 'Mohamed_Hasan_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
-  const handleDownloadResume = async () => {
-    try {
-      const response = await fetch('/api/resume/download');
-      if (response.ok) {
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'Mohamed_Hasan_Resume.pdf';
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-        document.body.removeChild(a);
-      }
-    } catch (error) {
-      console.error('Error downloading resume:', error);
-    }
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
