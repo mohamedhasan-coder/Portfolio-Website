@@ -2,27 +2,27 @@ import { Card, CardContent } from '@/components/ui/card';
 
 interface Skill {
   name: string;
-  icon: string;
+  gifUrl: string;
 }
 
 const techStack: Skill[] = [
-  { name: 'React.js', icon: '⚛️' },
-  { name: 'JavaScript', icon: '🟨' },
-  { name: 'HTML', icon: '🟧' },
-  { name: 'Java', icon: '☕' },
-  { name: 'Spring Boot', icon: '🍃' },
-  { name: 'Tailwind CSS', icon: '🎨' },
-  { name: 'MongoDB', icon: '🍃' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'C++', icon: '⚡' }
+  { name: 'React.js', gifUrl: 'https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif' },
+  { name: 'JavaScript', gifUrl: 'https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif' },
+  { name: 'HTML', gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif' },
+  { name: 'Java', gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif' },
+  { name: 'Spring Boot', gifUrl: 'https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif' },
+  { name: 'Tailwind CSS', gifUrl: 'https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif' },
+  { name: 'MongoDB', gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif' },
+  { name: 'Python', gifUrl: 'https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif' },
+  { name: 'C++', gifUrl: 'https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif' }
 ];
 
 const tools: Skill[] = [
-  { name: 'VS Code', icon: '💻' },
-  { name: 'GitHub', icon: '🐙' },
-  { name: 'Figma', icon: '🎨' },
-  { name: 'AWS', icon: '☁️' },
-  { name: 'Docker', icon: '🐳' }
+  { name: 'VS Code', gifUrl: 'https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif' },
+  { name: 'GitHub', gifUrl: 'https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif' },
+  { name: 'Figma', gifUrl: 'https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif' },
+  { name: 'AWS', gifUrl: 'https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif' },
+  { name: 'Docker', gifUrl: 'https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif' }
 ];
 
 export const SkillsSection = () => {
@@ -39,7 +39,12 @@ export const SkillsSection = () => {
                 {techStack.map((tech) => (
                   <Card key={tech.name} className="skill-card card-hover" data-testid={`skill-${tech.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}>
                     <CardContent className="p-6 text-center">
-                      <div className="text-4xl mb-3">{tech.icon}</div>
+                      <img 
+                        src={tech.gifUrl} 
+                        alt={`${tech.name} animation`} 
+                        className="w-12 h-12 mx-auto mb-3 rounded-lg object-cover"
+                        loading="lazy"
+                      />
                       <h3 className="text-sm font-medium text-foreground">{tech.name}</h3>
                     </CardContent>
                   </Card>
@@ -63,7 +68,12 @@ export const SkillsSection = () => {
                   {tools.map((tool) => (
                     <Card key={tool.name} className="skill-card card-hover" data-testid={`tool-${tool.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}>
                       <CardContent className="p-4 text-center">
-                        <div className="text-3xl mb-2">{tool.icon}</div>
+                        <img 
+                          src={tool.gifUrl} 
+                          alt={`${tool.name} animation`} 
+                          className="w-8 h-8 mx-auto mb-2 rounded-lg object-cover"
+                          loading="lazy"
+                        />
                         <h4 className="text-xs font-medium text-foreground">{tool.name}</h4>
                       </CardContent>
                     </Card>
