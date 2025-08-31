@@ -79,7 +79,7 @@ Built with **React, Express, and PostgreSQL** for a smooth, responsive, and anim
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/mohamedhasan-coder/portfolio.git
 cd portfolio
 
 # Install dependencies
