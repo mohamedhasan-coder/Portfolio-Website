@@ -89,3 +89,8 @@ npm install
 npm run dev  # frontend
 npm run dev:server  # backend
 
+## 📬 Contact  
+
+- **Portfolio:** [hasan-developer.netlify.app](https://hasan-developer.netlify.app/)  
+- **Email:** [mohamedhasan8403@gmail.com](mailto:mohamedhasan8403@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/mohamed-hasan-325051362](https://www.linkedin.com/in/mohamed-hasan-325051362/)  
