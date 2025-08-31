@@ -88,7 +88,7 @@ npm install
 # Start dev servers
 npm run dev  # frontend
 npm run dev:server  # backend
-
+```
 ## 📬 Contact  
 
 - **Portfolio:** [hasan-developer.netlify.app](https://hasan-developer.netlify.app/)  
