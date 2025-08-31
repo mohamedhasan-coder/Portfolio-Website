@@ -56,7 +56,6 @@ Preferred communication style: Simple, everyday language.
 - **Date Handling**: date-fns for date formatting and manipulation
 
 ### Development Services
-- **Replit Integration**: Custom plugins for development environment
 - **Font Loading**: Google Fonts (Inter) with preconnect optimization
 - **CSS Processing**: PostCSS with Tailwind CSS and Autoprefixer
 
