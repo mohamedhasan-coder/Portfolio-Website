@@ -1,65 +1,91 @@
-# Mohamed Hasan M - Portfolio Website
+# 🌐 Mohamed Hasan M – Portfolio  
 
-## Overview
+[![React](https://img.shields.io/badge/Frontend-React%2018-blue?logo=react&logoColor=white)](https://react.dev/)  
+[![Express](https://img.shields.io/badge/Backend-Express%20JS-green?logo=express&logoColor=white)](https://expressjs.com/)  
+[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/)  
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
 
-This is a modern, full-stack portfolio website for Mohamed Hasan M, a Java Full Stack Developer. The application showcases his skills, projects, education, and provides contact functionality. Built with React frontend and Express backend, it features a clean, responsive design with dark/light theme support and smooth animations.
+A **modern, full-stack portfolio website** showcasing my skills, projects, and education as a **Java Full Stack Developer**.  
+Built with **React, Express, and PostgreSQL** for a smooth, responsive, and animated experience.  
 
-## User Preferences
+---
 
-Preferred communication style: Simple, everyday language.
+## ✨ Features  
 
-## System Architecture
+- 🎨 **Dark/Light Theme** – toggle seamlessly  
+- ⚡ **Fast Performance** – optimized builds with Vite  
+- 🖼 **Smooth Animations** – Intersection Observer + CSS transitions  
+- 📄 **Download Resume** – instant PDF access  
+- 📬 **Contact Form** – integrated backend API with validation  
+- 📱 **Fully Responsive** – works on all devices  
 
-### Frontend Architecture
-- **Framework**: React 18 with TypeScript for type safety
-- **Routing**: Wouter for lightweight client-side routing
-- **UI Components**: Shadcn/ui component library with Radix UI primitives
-- **Styling**: Tailwind CSS with CSS custom properties for theming
-- **State Management**: React Query for server state, React Context for theme management
-- **Build Tool**: Vite for fast development and optimized production builds
+---
 
-### Backend Architecture
-- **Runtime**: Node.js with Express framework
-- **Language**: TypeScript with ES modules
-- **API Design**: RESTful endpoints for resume download and contact form submission
-- **Error Handling**: Centralized error middleware with proper HTTP status codes
-- **Logging**: Custom request/response logging middleware for API endpoints
+## 🏗️ System Architecture  
 
-### Data Storage Solutions
-- **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
-- **Schema Management**: Drizzle Kit for migrations and schema management
-- **Session Storage**: In-memory storage implementation with interface for future database integration
-- **File Storage**: Static file serving for resume downloads from attached_assets directory
+### **Frontend**  
+- ⚛ **React 18 + TypeScript**  
+- 🛣 **Wouter** for lightweight routing  
+- 🎨 **Shadcn/UI + Tailwind CSS** for clean UI  
+- 🔄 **React Query** for data fetching  
+- 🌓 **Theme Context** for dark/light modes  
 
-### Authentication and Authorization
-- **Current State**: Basic user schema defined but not implemented in the portfolio
-- **Future Ready**: User authentication structure prepared with username/password fields
-- **Session Management**: Connect-pg-simple configured for PostgreSQL session storage
+### **Backend**  
+- 🚀 **Express + TypeScript**  
+- 🗄 **PostgreSQL with Drizzle ORM**  
+- 🧩 **RESTful API** for contact form and resume download  
+- 📝 **Centralized error handling & logging**  
 
-### Development and Deployment
-- **Development Server**: Vite dev server with HMR for frontend, tsx for backend development
-- **Build Process**: Vite build for frontend, esbuild for backend bundling
-- **Environment**: Environment variable configuration for database connections
-- **Development Tools**: TypeScript compiler, path aliasing, and custom error overlays
+---
 
-## External Dependencies
+## 🗃️ Data & Storage  
 
-### Database Services
-- **Neon Database**: Serverless PostgreSQL database (@neondatabase/serverless)
-- **Connection**: PostgreSQL connection via DATABASE_URL environment variable
+- **Database:** Neon Serverless PostgreSQL  
+- **Migrations & Schema:** Drizzle Kit  
+- **Session Storage:** In-memory (ready for PostgreSQL session storage)  
+- **Static Files:** Resume and assets served via Express  
 
-### Frontend Libraries
-- **UI Framework**: Radix UI primitives for accessible components
-- **Icons**: Lucide React for consistent iconography
-- **Animations**: CSS-based animations with Intersection Observer for scroll effects
-- **Forms**: React Hook Form with Zod validation resolvers
-- **Date Handling**: date-fns for date formatting and manipulation
+---
 
-### Development Services
-- **Font Loading**: Google Fonts (Inter) with preconnect optimization
-- **CSS Processing**: PostCSS with Tailwind CSS and Autoprefixer
+## 🔐 Authentication (Future Ready)  
 
-### Build and Tooling
-- **TypeScript**: Full TypeScript support across frontend and backend
-- **Vite Plugins**: React plugin, runtime error overlay, and Replit cartographer
-- **Path Resolution**: Custom path aliases for clean imports (@, @shared, @assets)
+- 🧾 **User schema ready** for username/password  
+- 🔒 **Session management** setup with `connect-pg-simple`  
+- 👨‍💻 **Easily extendable** for protected admin routes  
+
+---
+
+## ⚙️ Development & Deployment  
+
+| Area              | Tool/Process |
+|-------------------|-------------|
+| **Dev Server**    | Vite HMR for frontend, `tsx` for backend |
+| **Build Process** | Vite (frontend) + esbuild (backend) |
+| **Environment**   | `.env` for secrets (DB URL, etc.) |
+| **Tooling**       | TypeScript, custom path aliases, error overlays |
+
+---
+
+## 📦 External Dependencies  
+
+- **Frontend:** Radix UI, Lucide Icons, React Hook Form, Zod, date-fns  
+- **Backend:** Drizzle ORM, Express, pg  
+- **Build Tools:** PostCSS, Autoprefixer, Vite Plugins  
+- **Fonts:** Google Fonts (Inter)  
+
+---
+
+## 🚀 Getting Started  
+
+```bash
+# Clone repo
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start dev servers
+npm run dev  # frontend
+npm run dev:server  # backend
+
