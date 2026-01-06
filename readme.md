@@ -20,7 +20,7 @@ Built with **React, Express, and PostgreSQL** for a smooth, responsive, and anim
 - 📱 **Fully Responsive** – works on all devices  
 
 ---
-
+       
 ## 🏗️ System Architecture  
 
 ### **Frontend**  
