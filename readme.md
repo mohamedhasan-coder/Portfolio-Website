@@ -11,7 +11,7 @@ Built with **React, Express, and PostgreSQL** for a smooth, responsive, and anim
 ---
 
 ## ✨ Features  
-
+ 
 - 🎨 **Dark/Light Theme** – toggle seamlessly  
 - ⚡ **Fast Performance** – optimized builds with Vite  
 - 🖼 **Smooth Animations** – Intersection Observer + CSS transitions  
