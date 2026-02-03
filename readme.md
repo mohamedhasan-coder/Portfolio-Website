@@ -5,7 +5,7 @@
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/)  
 [![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
 
-A **modern, full-stack portfolio website** showcasing my skills, projects, and education as a **Java Full Stack Developer**.  
+A **modern, full-stack portfolio website** showcasing my skills, projects, and education as a **Java Full Stack Developer**.    
 Built with **React, Express, and PostgreSQL** for a smooth, responsive, and animated experience.  
 
 --- 
