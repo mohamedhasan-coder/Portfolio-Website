@@ -8,7 +8,7 @@
 A **modern, full-stack portfolio website** showcasing my skills, projects, and education as a **Java Full Stack Developer**.  
 Built with **React, Express, and PostgreSQL** for a smooth, responsive, and animated experience.  
 
----
+--- 
    
 ## ✨ Features  
  
