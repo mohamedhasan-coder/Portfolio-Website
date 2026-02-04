@@ -21,7 +21,7 @@ Built with **React, Express, and PostgreSQL** for a smooth, responsive, and anim
 
 ---
        
-## 🏗️ System Architecture  
+## System Architecture  
 
 ### **Frontend**  
 - ⚛ **React 18 + TypeScript**  
